@@ -3,7 +3,7 @@ import './landing.css';
 
 
 export const Landing = () =>{
-    let post ='백종현입니다. 안녕하세요';
+    let post ='이인호 입니다. 안녕하세요';
     
   
     return (
