@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import './page/landing'
 
+// 백종현 바보
+
 function App() {
   let post ='백종현';
   
