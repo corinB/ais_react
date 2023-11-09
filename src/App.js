@@ -5,7 +5,7 @@ import './page/landing'
 // 백종현 바보
 
 function App() {
-  let post ='신현지';
+  let post ='신현지'; // 신현지
   
 
   return (
