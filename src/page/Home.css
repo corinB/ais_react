@@ -1,0 +1,82 @@
+.Home {
+  text-align: center;
+}
+
+.page {
+  width: 70%; /* 화면 너비의 70%로 설정 */
+  margin: 0 auto; /* 가운데 정렬을 위해 margin을 자동으로 설정 */
+}
+
+
+/*header*/
+.header {
+  background-color: rgb(47, 82, 60);
+  display: flex;
+  /*justify-content: space-between;*/
+  align-items: center;
+  max-width: 100%;
+  padding: 10px 70px;
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: 30px;
+  width: 100px;
+  height: auto;
+}
+
+.mypage {
+  margin-left: auto;
+  color:rgb(214, 230, 204);
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+/*options*/
+.options {
+  border-color: black;
+  padding-top: 30px;
+}
+
+.options_a {
+  display: flex;
+}
+
+.opt_bulletinBoard,
+.opt_mentorMentee {
+  margin-right: 50px; /* 각 버튼 사이에 마진을 조절하세요 */
+  color: gray; /* 초기 상태의 글자 색은 회색으로 설정 */
+  cursor: pointer; /* 포인터로 커서를 변경하여 클릭 가능함을 나타냅니다. */
+}
+
+.opt_bulletinBoard:hover,
+.opt_mentorMentee:hover {
+  color: black; /* 마우스 호버 시 글자 색을 검정색으로 변경 */
+}
+.opt_bulletinBoard.active,
+.opt_mentorMentee.active {
+  color: black; /* 선택된 버튼의 글자 색을 검정색으로 지정합니다. */
+}
+
+/*bulletinBoardContent*/
+.bulletinBoardContent {
+  background-color: rgb(245, 245, 245);
+}
+.btn_bulletin{
+  background-color: white;
+  border-radius: 10%;
+  border-color:rgb(47, 82, 60);
+  margin: 70px 30px;
+}
+.img_bulletin {
+  width: 250px;
+  height: 200px;
+  margin-top: 10px;
+}
+.text_bulletin {
+  padding: 10px 0px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/*mentorMenteeContent*/

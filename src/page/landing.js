@@ -1,11 +1,9 @@
 import logo from '../logo.svg';
-import './landing.css';
+// import './landing.css';
 
 
 export const Landing = () =>{
     let post ='백종현입니다.';
-    
-  
     return (
       <div className="App">
         <div className = "abc">
