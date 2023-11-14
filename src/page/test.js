@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { db ,authService} from "C:/Users/jonghyun/Desktop/re/my-app/src/firebais.js";
+import { db ,authService} from "../firebais";
 import { GoogleLogin } from './functions/loginSinup';
 import { onAuthStateChanged } from 'firebase/auth';
 import { doc, setDoc } from "firebase/firestore"; 

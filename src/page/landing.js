@@ -6,8 +6,9 @@ import {
   signInWithEmailAndPassword  //로그인
 } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom';
+import { GoogleAuthProvider} from 'firebase/auth'; 
+import { signInWithPopup } from 'firebase/auth';
 import { GoogleLogin, loginFun, signupFun } from './functions/loginSinup';
-import { auth } from 'firebase-admin';
 
 
 
