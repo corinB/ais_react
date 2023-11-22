@@ -4,12 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Landing} from'./page/landing';
-import Home from './page/Home';
+//import Home from './page/Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Home/>
+    <App/>
   </React.StrictMode>
 );
 

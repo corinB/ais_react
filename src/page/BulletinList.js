@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import './Home.css';
 import logo from './img/logo.png';
+/*
 import farm from './img/farm.jpg';
 import information from './img/information.png';
-import event from './img/event.png';
+import event from './img/event.png';*/
 import mentor from './img/mentor.png';
 import mentee from './img/mentee.png';
 
-const Home = () => {
+const BulletinList = () => {
   const [selectedOption, setSelectedOption] = useState('bulletinBoard'); // 초기값은 'bulletinBoard'로 설정
 
   const handleOptionClick = (option) => {
@@ -42,18 +43,15 @@ const Home = () => {
         {selectedOption === 'bulletinBoard' ? (
           <div className="bulletinBoardContent">
             {/* 게시판 페이지에 대한 컨텐츠 */}
-            <button className="btn_bulletin">
-              <img className="img_bulletin" src={farm}></img>
-              <div className="text_bulletin">자유 게시판</div>
-            </button>
-            <button className="btn_bulletin">
-              <img className="img_bulletin" src={information}></img>
-              <div className="text_bulletin">정보 게시판</div>
-            </button>
-            <button className="btn_bulletin">
-              <img className="img_bulletin" src={event}></img>
-              <div className="text_bulletin">이벤트 게시판</div>
-            </button>
+            <div className="top_opt">
+              <div className="bulletinName">자유 게시판</div>
+              <div className="Search">
+                <input type="search" id="query" class="input_text" name="query" placeholder=" 검색어를 입력해 주세요."></input>
+                    <button class="Btn" type="submit"><div class="searchBtn"></div></button>
+              </div>
+              <div className="btnWriting"></div>
+
+            </div>
           </div>
         ) : (
           <div className="mentorMenteeContent">
@@ -73,4 +71,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default BulletinList;
