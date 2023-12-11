@@ -23,6 +23,7 @@
   margin-left: 30px;
   width: 100px;
   height: auto;
+  cursor: pointer;
 }
 
 .mypage {
@@ -34,6 +35,7 @@
 
 /*options*/
 .options {
+  padding-left: 170px;
   border-color: black;
   padding-top: 30px;
 }
@@ -108,7 +110,7 @@
 }
 
 .bulletinName {
-  padding: 10px 30px;
+  padding: 10px 24px;
   border-color: rgb(0, 0, 0);
   border-radius: 30px;
   border: 2px solid black;
@@ -116,4 +118,115 @@
   background-color: white;
   font-weight: 900;
   font-size: larger;
+  margin-right: 20px;
+}
+
+.searchWord {
+  padding: 14px 20px;
+  border-color: rgb(0, 0, 0);
+  border-radius: 30px 0px 0px 30px;
+  border: 2px solid black;
+  width: 300px;
+}
+
+.BtnSearch {
+  background-color: black;
+  color: white;
+  padding: 12px 18px;
+  border-color: rgb(0, 0, 0);
+  border-radius: 0px 30px 30px 0px;
+  border: 2px solid black;
+  margin-right: 20px;
+  cursor: pointer;
+  
+}
+
+.btnWriting {
+  background-color: white;
+  padding: 8px 18px;
+  border-color: rgb(0, 0, 0);
+  border-radius: 30px;
+  border: 2px solid rgb(47, 82, 60);
+  cursor: pointer;
+  font-weight: 900;
+  font-size: larger;
+}
+
+.bulletinList {
+  border: 1px solid #ccc;
+}
+
+.bulletinIndex {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  background-color: rgb(47, 82, 60);
+  color: white;
+  padding: 10px 0px;
+  padding-right: 15px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.title {
+  flex: 60;
+  text-align: center;
+}
+
+.date {
+  flex: 25;
+  text-align: center;
+}
+
+.views {
+  flex: 15;
+  text-align: center;
+}
+
+.bulletinContent {
+/*내에서 스크롤 설정
+  max-height: 400px;
+  overflow-y: auto;*/
+  padding: 0px 20px 20px 20px;
+}
+
+.contentItem {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.contentTitle {
+  flex: 60;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.contentDate {
+  flex: 25;
+  text-align: center;
+  padding-right: 5px;
+}
+
+.contentViews {
+  flex: 15;
+  text-align: center;
+}
+/* Home.css */
+/* ... 기존 CSS 코드 ... */
+
+.pagination {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination span {
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination span.active {
+  font-weight: bold;
+  color: rgb(47, 82, 60);
 }
