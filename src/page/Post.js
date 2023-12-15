@@ -135,7 +135,6 @@ const Post = () => {
             <p className="comment-content">{comment.content}</p>
           </div>
         ))}
-        <div className="extra-space" /> {/* 여기에 추가적인 공간을 만듭니다 */}
         <form className="comment-form" onSubmit={handleCommentSubmit}>
           <div className="comment-input">
             <textarea
