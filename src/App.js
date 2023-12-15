@@ -5,7 +5,9 @@ import Header from './page/Header';
 import Options from './page/Options';
 import BulletinBoardContent from './page/BulletinBoardContent';
 import MentorMenteeContent from './page/MentorMenteeContent';
-import BulFree from './page/BulFree'; // Bulletin 컴포넌트 import
+import BulFree from './page/BulFree';
+import Writing from './page/Writing';
+import Post from './page/Post';
 
 const App = () => {
   const [selectedOption, setSelectedOption] = useState('bulletinBoard');
@@ -24,6 +26,8 @@ const App = () => {
             selectedOption === 'bulletinBoard' ? <BulletinBoardContent /> : <MentorMenteeContent />
           } />
           <Route path="/page/BulFree" element={<BulFree/>} />
+          <Route path="/page/Writing" element={<Writing/>} />
+          <Route path="/page/Post" element={<Post/>} />
         </Routes>
       </div>
     </Router>

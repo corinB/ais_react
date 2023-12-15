@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 const BulFree = () => {
@@ -7,7 +8,7 @@ const BulFree = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [currentPosts, setCurrentPosts] = useState([]);
   const [pageNumbers, setPageNumbers] = useState([]);
-  const postsPerPage = 10; // 페이지 당 게시글 수
+  const postsPerPage = 15; // 페이지 당 게시글 수
   const posts = [
     {
       id: 1,
@@ -136,7 +137,9 @@ const BulFree = () => {
               <input type="search" className='searchWord' placeholder=" 검색어를 입력해 주세요."></input>
               <button className="BtnSearch" type="submit">검색</button>
             </div>
-            <div className="btnWriting">글 작성하기</div>
+            <div className="btnWriting">
+              <Link to="/page/Writing">글 작성하기</Link>
+            </div>
           </div>
         </div>
         <div className="bulletinList">
@@ -148,7 +151,11 @@ const BulFree = () => {
           <div className="bulletinContent">
             {currentPosts.map(post => (
               <div className="contentItem" key={post.id}>
-                <div className="contentTitle">{post.title}</div>
+                <div className="contentTitle">
+                  <Link to = "/page/Post">
+                    {post.title}
+                  </Link>
+                </div>
                 <div className="contentDate">{post.date}</div>
                 <div className="contentViews">{post.views}</div>
               </div>
